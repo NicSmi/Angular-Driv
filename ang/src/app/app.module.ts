@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'projects/material/src/public-api';
+import { MessageModule } from './message/message.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { MaterialModule } from 'projects/material/src/public-api';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    MessageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

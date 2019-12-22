@@ -1,1 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.stime{
+    float: right;
+    font-size: xx-small;
+}
+
+.mes-con-size{
+    font-size: 13px;
+}
+
+
+.ktime{
+    float: right;
+    padding-right: 11px;
+    padding-top: 15px;
+}
+
+.jk{
+    margin-top: 100px;
+}
+.mes-content{
+    width: 65%;
+    
+}
+

@@ -1,15 +1,17 @@
 <mat-list>
-    <mat-list-item *ngFor="let message of messages">
-      <img matListAvatar src="http://placecorgi.com/600/600" alt="platdef">
-      <div matLine> {{message.from}} 
-        <span class="stime" > {{message.time}} </span>
+  <mat-list-item *ngFor="let message of messages">
+    <img matListAvatar src="http://placecorgi.com/600/600" alt="platdef">
+    <div matLine> {{message.from}}
+      <span class="stime"> {{message.time}} </span>
+    </div>
+    <div matLine>
+      <div class="mes-content" matLine><span class="mes-con-size">{{message.content}}</span></div>
+      <div>
+        <span class="ktime" matBadge="{{message.mcount}}" matBadgePosition="above before" matBadgeColor="warn"
+          matBadgeSize="small"></span>
       </div>
-      <div matLine> 
-        <div class="mes-content" matLine><span class="mes-con-size">{{message.content}}</span></div>
-        <div>
-          <span class="ktime"  matBadge= "{{message.mcount}}" matBadgePosition="above before" matBadgeColor="warn" matBadgeSize="small"></span>
-        </div>
-      </div>
-      <mat-divider></mat-divider>
-    </mat-list-item>
-  </mat-list>
+    </div>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
+<!-- <app-convo></app-convo> -->

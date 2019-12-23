@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'projects/material/src/public-api';
 import { MessageModule } from './message/message.module';
+import { ConvoModule } from './convo/convo.module';
+import { RouterModule, Routes } from '@angular/router';
 
 
 @NgModule({
@@ -17,7 +19,8 @@ import { MessageModule } from './message/message.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    MessageModule
+    MessageModule,
+    ConvoModule
   ],
   providers: [],
   bootstrap: [AppComponent]

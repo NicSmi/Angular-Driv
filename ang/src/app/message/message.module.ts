@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MessageRoutingModule } from './message-routing.module';
 import { MessageComponent } from './message.component';
 import { MaterialModule } from 'projects/material/src/public-api';
+import { ConvoModule } from '../convo/convo.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MaterialModule } from 'projects/material/src/public-api';
   imports: [
     CommonModule,
     MessageRoutingModule,
-    MaterialModule
+    MaterialModule,
+    ConvoModule
   ],
   exports: [
     MessageComponent

@@ -7,14 +7,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from 'projects/material/src/public-api';
 import { MessageModule } from './message/message.module';
 import { ConvoModule } from './convo/convo.module';
-import { RouterModule, Routes } from '@angular/router';
+import { ChatroomModule } from './chatroom/chatroom.module';
+import { ChatroomListComponent } from './chatroom/chatroom-list/chatroom-list.component';
+import { ChatroomMessagesComponent } from './chatroom/chatroom-messages/chatroom-messages.component';
+// import { RouterModule, Routes } from '@angular/router';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChatroomListComponent,
+    ChatroomMessagesComponent
   ],
   imports: [
+    ChatroomModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

@@ -22,11 +22,11 @@ import { ChatroomMessagesComponent } from './chatroom/chatroom-messages/chatroom
   imports: [
     ChatroomModule,
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
     MessageModule,
-    ConvoModule
+    ConvoModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

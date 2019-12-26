@@ -1,15 +1,16 @@
 <mat-list>
-  <mat-list-item *ngFor="let message of messages">
+  <mat-list-item *ngFor="let chatroom of chatrooms" [routerLink]="['/chatroom', chatroom.id]">
+    <!-- <a [routerLink]="['/chatroom', chatroom.id]"></a> -->
     <img matListAvatar src="http://placecorgi.com/600/600" alt="platdef">
-    <div matLine> {{message.from}}
-      <span class="stime"> {{message.time}} </span>
+    <div matLine> {{chatroom.from}}
+      <span class="stime"> {{chatroom.time}} </span>
     </div>
     <div matLine>
-      <div class="mes-content" matLine><span class="mes-con-size">{{message.content}}</span></div>
+      <div class="mes-content" matLine><span class="mes-con-size">{{chatroom.content}}</span></div>
       <div>
-        <span class="ktime" matBadge="{{message.mcount}}" matBadgePosition="above before" matBadgeColor="warn"
+        <span class="ktime" matBadge="{{chatroom.mcount}}" matBadgePosition="above before" matBadgeColor="warn"
           matBadgeSize="small"></span>
-      </div> 
+      </div>
     </div>
     <mat-divider></mat-divider>
   </mat-list-item>
